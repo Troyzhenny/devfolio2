@@ -1,14 +1,16 @@
-import './';
+import './App.css';
 import Navbar from './component/Navbar';
 
 const App = () => {
   return(
     <>
       <div>
-        <Navbar />
         <header>
-          <h2>logo</h2>
+          <Navbar />
         </header>
+        <main>
+          <h1>Main Page</h1>
+        </main>
       </div>
     </>
   )

@@ -6,21 +6,28 @@
 
 .hamburger {
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    position: fixed;
+    /* position: relative; */
     top: 20px;
     right: 20px;
     z-index: 1000;
   }
   
-  .hamburger div {
+  .hamburger span {
     width: 100%;
-    height: 4px;
-    background-color: #333;
+    height: 2px;
+    background-color: var(--s-font-color);
+  } 
+  .hamburger span:nth-child(1) {
+    width: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    width: 20px;
+    margin-left: 49%;
   }
   
   .nav {
@@ -29,8 +36,8 @@
     right: -100%;
     height: 100%;
     width: 300px;
-    background-color: #333;
-    transition: right 0.3s ease-in-out;
+    background-color: #323232;
+    transition: right .3s ease;
     z-index: 999;
   }
   
@@ -58,7 +65,16 @@
     text-decoration: none;
     font-size: 1.5rem;
   }
-  
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border: 1px solid greenyellow;
+  }
+
   /* Full-screen navigation on mobile/tablets */
   @media (max-width: 768px) {
     .nav {
