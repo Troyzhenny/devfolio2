@@ -5,4 +5,14 @@
 
     /* Color Variables */
     --bg-color-main: #000208;
+    --p-font-color: #f0f1ff;
+    --s-font-color: #B0B5E8;
+}
+
+body {
+    color: var(--p-font-color);
+    font-size: 1em;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+    background-color: var(--bg-color-main);
 }
